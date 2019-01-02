@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>popup</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .btn-group{
+            width: 145px;
+            padding: 10px;
+        }
+        .btn{
+            display: inline-block;
+            padding: 4px;
+            font-size: 12px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+        .btn:active:focus, .btn:focus{
+            outline: none;
+        }
+        .btn0{
+            border-color: #555;
+            background-color: #fff;
+            color: #555;
+        }
+        .btn1{
+            border-color: #2c3848;
+            background-color: #2c3848;
+            color: #91aed5;
+        }
+        .btn2{
+            border-color: #2b2b2b;
+            background-color: #2b2b2b;
+            color: #a5a39c;
+        }
+        .btn3{
+            border-color: #5c8768;
+            background-color: #7dc383;
+            color: #aeeec0;
+        }
+        .btn4{
+            border-color: #9b93d0;
+            background-color: #5c476f;
+            color: #9b93d0;
+        }
+    </style>
+</head>
+<body>
+<div id="btnGroup" class="btn-group">
+    <button class="btn btn0" theme="0">默认色</button>
+    <button class="btn btn1" theme="1">意境蓝</button>
+    <button class="btn btn2" theme="2">玛雅黑</button>
+    <button class="btn btn3" theme="3">青青绿</button>
+    <button class="btn btn4" theme="4">基佬紫</button>
+</div>
+<script src="js/popup.js"></script>
+</body>
+</html>

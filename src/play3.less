@@ -1,0 +1,577 @@
+.bilibili-theme-3{
+    @base-color: #7dc383;
+    @auxiliary-color: #aeeec0;
+    @line-color: #71b077;
+    @vip-color: #f5729d;
+    @icons: "chrome-extension://__MSG_@@extension_id__/img/icons-3.png";
+    @icons-comment: "chrome-extension://__MSG_@@extension_id__/img/icons-comment-3.png";
+
+    .title-text(){
+        color: #ffffff;
+    }
+    .module-text(){
+        color: #446e5c;
+    }
+    .module-sub-text(){
+        color: #aeeec0;
+    }
+    .button-base(){
+        background-color: #6a9c78;
+        border-color: #5c8768;
+        color: #aeeec0;
+        &:hover{
+            background-color: #5c8768;
+            border-color: #5c8768;
+            color: #ffffff;
+        }
+    }
+    //发表评论输入框
+    .comment-textarea(){
+        background-color: #71b077;
+        border-color: #71b077;
+        color: #446e5c;
+    }
+    //发表评论按钮
+    .comment-submit(){
+        background-color: #6a9c78!important;
+        color: #aeeec0!important;
+        border-color: #5c8768!important;
+    }
+    //弹幕列表标题
+    .dan-auxiliary-title(){
+        color: #446e5c;
+    }
+    //弹幕列表文字
+    .dan-auxiliary-text(){
+        color: #aeeec0;
+    }
+
+    //投稿图标
+    .bili-header-m .bili-icon{
+        background-image: url("@{icons}");
+    }
+
+    //播放器
+    .bilibili-player{
+        -webkit-box-shadow: 0 0 8px #192f1b;
+        box-shadow: 0 0 8px #192f1b;
+    }
+
+    //视频信息
+    .video-info .video-title .activity{
+        color: #fff;
+        background-color: @vip-color;
+    }
+    .video-info .video-title{
+        .title-text;
+    }
+    .video-info .video-data{
+        .module-text;
+    }
+    .video-info .video-data .a-crumbs a{
+        .module-text;
+        &:hover{
+            color: #aeeec0;
+        }
+    }
+    .video-toolbar{
+        color: #446e5c;
+        border-bottom: 1px solid @line-color;
+    }
+    .video-toolbar .ops>span{
+        color: #446e5c;
+    }
+    .video-toolbar .ops>span i{
+        color: #446e5c;
+    }
+    .video-toolbar .ops>span.on, .video-toolbar .ops>span.on i, .video-toolbar .ops>span:hover, .video-toolbar .ops>span:hover i{
+        color: @auxiliary-color;
+    }
+    .video-toolbar .more i{
+        color: #446e5c;
+        &:hover{
+            color: @auxiliary-color;
+        }
+    }
+
+    //用户信息
+    .up-info .u-info .name .username{
+        .module-text;
+        &:hover{
+            color: @auxiliary-color;
+        }
+    }
+    .is-vip{
+        color: @vip-color !important;
+    }
+    .up-info .u-info .name .username.is-vip:hover{
+        color: @vip-color !important;
+    }
+    .up-info .u-info .name .message{
+        .module-text;
+        &:hover{
+            color: @auxiliary-color;
+        }
+    }
+    .up-info .u-info .desc{
+        .module-text;
+    }
+    //视频描述
+    .video-desc .info{
+        color: @auxiliary-color;
+    }
+    .up-info .btn .b-cd{
+        background: @base-color;
+        border-color: @vip-color;
+        color: @vip-color;
+        &:hover{
+            background: @vip-color;
+            color: #fff;
+        }
+    }
+    .bi-btn{
+        .button-base;
+    }
+    .video-desc .copyright{
+        color: #fd676f;
+    }
+    //视频描述展开
+    .video-desc .btn span{
+        .module-text;
+        &:hover{
+            color: @auxiliary-color;
+        }
+    }
+    //视频tag
+    .v-wrap .s_tag{
+        border-color: @line-color;
+    }
+    .s_tag .tag-area>li{
+        background: @base-color;
+        border-color: #5c8768;
+    }
+    .s_tag .tag-area>li>a{
+        color: #5c8768;
+    }
+    .s_tag .tag-area>li:hover{
+        background: #5c8768;
+        border-color: #5c8768;
+    }
+    .s_tag .tag-area>li:hover>a{
+        color: #fff;
+    }
+    .s_tag .btn-add{
+        background: @base-color;
+        border: 1px solid #5c8768;
+    }
+    .s_tag .btn-add span{
+        background: #5c8768;
+    }
+    .s_tag .btn-add:hover{
+        background: #5c8768;
+        border-color: #5c8768;
+    }
+    .s_tag .btn-add:hover span{
+        background: #fff;
+    }
+
+    //活动投票
+    .activity-m .inside-wrp{
+        background-color: @line-color;
+        border-color: @line-color;
+    }
+    .activity-m .inside-wrp .hinter-msg{
+        color: #fff;
+    }
+    .activity-m .inside-wrp .l-inside{
+        color: #fff;
+    }
+    .activity-m.act-now .l-inside .b-btn-praise{
+        color: #fff;
+        background-color: @vip-color;
+    }
+
+    //评论
+    .bb-comment{
+        background: @base-color;
+    }
+    .bb-comment .comment-header{
+        border-color: #446e5c;
+    }
+    .bb-comment .comment-header .tabs-order li{
+        .module-text;
+    }
+    .bb-comment .comment-header .tabs-order li.on{
+        border-bottom: 1px solid #fadc6d;
+        color: #fadc6d;
+    }
+    .bb-comment .comment-header .tabs-order li:hover{
+        color: #fadc6d;
+    }
+    .comment-m .b-head{
+        .module-text;
+    }
+    .comment-m .b-head .del-log{
+        .module-text;
+    }
+    .bb-comment .comment-header .tabs-order li.on:after{
+        background-image: url("@{icons-comment}");
+    }
+    .paging-box .current, .paging-box .dian, .paging-box .next, .paging-box .prev, .paging-box .tcd-number{
+        .module-text;
+        &:hover{
+            color: @auxiliary-color;
+        }
+    }
+    .paging-box .result{
+        .module-text;
+    }
+    .paging-box .current{
+        color: @auxiliary-color;
+    }
+    //评论内容
+    .bb-comment .comment-list .list-item .con{
+        border-color: @line-color;
+    }
+    .bb-comment .comment-list .list-item:last-child .con{
+        border-color: @line-color;
+    }
+    .bb-comment .comment-list .list-item .user-face .hot-follow .follow-btn{
+        .button-base;
+    }
+    .bb-comment .stick{
+        color: @vip-color;
+        border-color: @vip-color;
+        &.assist{
+            color: @vip-color;
+            border-color: @vip-color;
+        }
+    }
+    .bb-comment .comment-list .list-item .user .name{
+        .module-text;
+        &:hover{
+            color: @auxiliary-color;
+        }
+    }
+    .bb-comment .vip-red-name{
+        color: @vip-color;
+    }
+    .bb-comment .comment-list .list-item .user .text-con{
+        color: #fff;
+    }
+    .bb-comment .comment-list .list-item .text{
+        color: #fff;
+    }
+    .bb-comment .comment-list .list-item .info{
+        .module-text;
+        .plad{
+            a{
+                .module-text;
+                &:hover{
+                    color: @auxiliary-color;
+                }
+            }
+        }
+        .btn-hover:hover{
+            color: @auxiliary-color;
+            background: transparent;
+        }
+    }
+    .bb-comment .comment-list .list-item .info .like i{
+        background-image: url("@{icons-comment}");
+    }
+    .bb-comment .comment-list .list-item .info .hate i{
+        background-image: url("@{icons-comment}");
+    }
+    .bb-comment .comment-list .list-item .info .operation .spot{
+        background-image: url("@{icons-comment}");
+    }
+    //回复查看更多
+    .bb-comment .comment-list .list-item .reply-box .view-more{
+        .module-text;
+        .btn-more{
+            .module-text;
+            &:hover{
+                background: transparent;
+                color: @auxiliary-color;
+            }
+        }
+    }
+    //热门回复
+    .bb-comment .hot-line{
+        border-color: @line-color;
+    }
+    .bb-comment .hot-line span{
+        background: @base-color;
+        color: #446e5c;
+    }
+    .bb-comment .hot-line a{
+        color: #fadc6d;
+        &:hover{
+            background: transparent;
+            color: #fadc6d;
+        }
+    }
+
+    //分页
+    .paging-box-big .current, .paging-box-big .dian, .paging-box-big .next, .paging-box-big .prev, .paging-box-big .tcd-number{
+        background-color: @base-color;
+        border-color: #5c8768;
+        color: #5c8768;
+        &:hover{
+            background-color: #5c8768;
+            border-color: #5c8768;
+            color: #fff;
+        }
+    }
+    .paging-box-big .current{
+        background-color: #5c8768;
+        border-color: #5c8768;
+        color: #fff;
+    }
+    .paging-box-big .page-jump{
+        color: #5c8768;
+        input{
+            border-color: #5c8768;
+            background-color: @base-color;
+            color: #fff;
+            &:focus{
+                border-color: #fff;
+            }
+        }
+    }
+
+    //发表评论
+    .bb-comment .textarea-container textarea{
+        .comment-textarea;
+    }
+    .bb-comment .comment-send .comment-submit{
+        .comment-submit;
+    }
+    .bb-comment .comment-send .comment-emoji{
+        .button-base;
+        .text{
+            color: @auxiliary-color;
+        }
+        &:hover{
+            .text{
+                color: #fff;
+            }
+        }
+        .face{
+            background-image: url("@{icons-comment}");
+        }
+    }
+    .bb-comment .no-login .baffle{
+        .module-text;
+        background-color: @line-color;
+    }
+    .bb-comment .no-login .baffle .b-btn{
+        .button-base;
+    }
+    .bb-comment .no-login .textarea-container textarea{
+        .comment-textarea;
+    }
+    .bb-comment .no-login .textarea-container.focus textarea, .bb-comment .no-login .textarea-container:hover textarea{
+        .comment-textarea;
+    }
+    .bb-comment .no-login .comment-submit{
+        .comment-submit;
+    }
+
+    //弹幕列表
+    .v-wrap .danmaku-wrap{
+        background: transparent;
+    }
+    .player-auxiliary-area{
+        background: transparent;
+    }
+    .bui-collapse .bui-collapse-header{
+        background: #6a9c78;
+        .module-text;
+    }
+    .bui-collapse .bui-collapse-header .bui-collapse-arrow{
+        .module-text;
+    }
+    .player-auxiliary-area .player-auxiliary-filter{
+        background: transparent;
+    }
+    .player-auxiliary-area .player-auxiliary-filter-title{
+        .dan-auxiliary-title;
+    }
+    .player-auxiliary-area .player-auxiliary-filter-menu{
+        .dan-auxiliary-title;
+        &:hover{
+            .dan-auxiliary-title;
+        }
+    }
+    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-management{
+        background: #77ab86;
+        color: #aeeec0;
+    }
+    .bui-collapse .bui-collapse-body{
+        background: #77ab86;
+    }
+    .player-auxiliary-area .player-auxiliary-danmaku .player-auxiliary-danmaku-function{
+        background: transparent;
+    }
+    .player-auxiliary-area .player-auxiliary-danmaku .player-auxiliary-danmaku-function [class*=player-auxiliary-danmaku-btn-]{
+        background: transparent;
+        .dan-auxiliary-text;
+    }
+    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap{
+        background-color: transparent;
+    }
+    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row{
+        .dan-auxiliary-text;
+    }
+    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row span.danmaku-info-danmaku{
+        .dan-auxiliary-text;
+    }
+    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row.bpui-selected, .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row.bpui-selected>span, .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row.bpui-selecting, .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row.bpui-selecting>span{
+        background-color: #6a9c78;
+        color: #fff;
+    }
+    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row .danmaku-info-block-btn, .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row .danmaku-info-protect-btn, .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .player-auxiliary-danmaku-list .danmaku-info-row .danmaku-info-report-btn{
+        .button-base;
+        border-radius: 2px;
+    }
+    .bui-button.bui-button-gray2{
+        background-color: #6a9c78;
+        .module-text;
+        &:hover{
+            background-color: #6a9c78;
+            color: #fff;
+        }
+    }
+    .bui-button.bui-button-gray2.bui-button-disabled{
+        background-color: #6a9c78;
+        .module-text;
+        &:hover{
+            background-color: #6a9c78;
+            color: #fff;
+        }
+    }
+
+    .danmaku-wrap .player-auxiliary-block-wrap{
+        border-bottom: 0;
+    }
+    .danmaku-wrap .player-auxiliary-block .player-auxiliary-block-tabpanel .player-auxiliary-block-tabpanel-row.special-title .player-auxiliary-block-label{
+        color: #fff;
+    }
+    .danmaku-wrap .bui-switch .bui-checkbox:checked+.bui-body{
+        background: #fadc6d;
+    }
+    .bui-button.bui-button-gray{
+        .button-base;
+    }
+    .bui-tabs .bui-tabs-header .bui-tabs-header-item{
+        color: #fff;
+    }
+    .bui-tabs .bui-tabs-header .bui-tabs-header-item.bui-tabs-header-item-active{
+        color: #fadc6d;
+        border-bottom: 1px solid #fadc6d;
+    }
+
+    //视频选集
+    .multi-page{
+        background: #77ab86;
+    }
+    .multi-page .head-con{
+        .dan-auxiliary-title;
+        background: #6a9c78;
+        padding: 10px 16px;
+    }
+    .multi-page .head-con h3{
+        .dan-auxiliary-title;
+    }
+    .multi-page .head-con .range-box i{
+        .dan-auxiliary-title;
+    }
+    .multi-page .head-con .range-box i:hover{
+        color: @auxiliary-color;
+    }
+    .multi-page .head-con .range-box .cur-page{
+        .dan-auxiliary-title;
+    }
+    .multi-page .cur-list .list-box li a{
+        .dan-auxiliary-text;
+    }
+    .multi-page .cur-list .list-box li.on{
+        background: #6a9c78;
+    }
+    .multi-page .cur-list .list-box li.on>a{
+        color: #fff;
+    }
+    .multi-page .cur-list .list-box li:hover{
+        background: #6a9c78;
+        a{
+            color: #fff;
+        }
+    }
+    .multi-page .cur-list .module-box li:hover{
+        border-color: #5c8768;
+        a{
+            color: #5c8768;
+        }
+    }
+    .multi-page .cur-list .module-box li.on{
+        border-color: #5c8768;
+        background: #5c8768;
+        a{
+            color: #fff;
+        }
+        &:hover{
+            a{
+                color: #fff;
+            }
+        }
+    }
+
+    //相关视频推荐
+    .recommend-list .rec-title{
+        .module-text;
+    }
+    .video-page-card .card-box .info .title{
+        .module-text;
+    }
+    .video-page-card .card-box .info .title:hover{
+        color: #fff;
+    }
+    .video-page-card .card-box .info .count a{
+        .module-sub-text;
+    }
+    .video-page-card .card-box .info .count{
+        .module-sub-text;
+    }
+    .recommend-list .rec-footer{
+        .button-base;
+    }
+
+    //大家围观的直播
+    .pop-live .pl__head{
+        .module-text;
+    }
+    .pop-live .pl__card{
+        background-color: @line-color;
+        border-color: @line-color;
+    }
+    .pop-live .pl__title{
+        .module-text;
+    }
+    .pop-live .pl__user{
+        .module-sub-text;
+    }
+    .pop-live .pl__icon--user{
+        background-image: url("@{icons}");
+    }
+    .pop-live .pl__icon--online{
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NzBCM0FCODNBRTZFODExQURBNTgyMTlEMzRGQUJEOSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowRUVCQzRDMkVFMDYxMUU4QjlEM0I0MkU2MzlDODUyNCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowRUVCQzRDMUVFMDYxMUU4QjlEM0I0MkU2MzlDODUyNCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjMwRUFDRTg3NDdFNkU4MTFBRkVCRDdBREYxODcyQTc0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjc3MEIzQUI4M0FFNkU4MTFBREE1ODIxOUQzNEZBQkQ5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+EcXoqwAAAKZJREFUeNpiXPfugCcDA8NcIJZkwA+eA3EyI1DDMyIUwzUxkaAYBCSZ0AR+AHEFEEtAcQVUDA6QNXwDYlcgvgTE56EYxHaDymFoSAsUtD8CDYB0KJ4LFDsMZYMBCw63/ofSjGh8BlAo/UdykjsQ80Ft+QuyFYg/AfFOIOZCdxJIYDcQ6wKxHhAbQtm7YYrRbSAKMEFjkFjwAqQhBcQgQvFTUNIACDAAWTwr8nC20fMAAAAASUVORK5CYII=");
+    }
+
+    //侧边按钮
+    .float-nav .nav-menu .item{
+        .button-base;
+    }
+
+}

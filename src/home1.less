@@ -1,0 +1,521 @@
+.bilibili-theme-1{
+    @base-color: #2c3848;
+    @scrollbar-color: #1b2736;
+    @scrollbar-thumb-color: #3a495b;
+    @footer-bg-color: #171e28;
+    @footer-text-color: #575e69;
+    @icons: "chrome-extension://__MSG_@@extension_id__/img/icons-1.png";
+
+    //投稿按钮
+    .upload-btn(){
+        background-color: #91aed5;
+    }
+    .upload-btn-a(){
+        color: #91aed5;
+        background-image: url("@{icons}");
+    }
+    // 版块标题
+    .module-title(){
+        color: #ffffff;
+        &:hover{
+            color: #91aed5;
+        }
+    }
+    // 版块文字
+    .module-text(){
+        color: #ffffff;
+    }
+    .module-sub-text(){
+        color: #91aed5;
+        background-color: @base-color;
+    }
+    // 排行标题
+    .rank-title(){
+        color: #ffffff;
+    }
+    // 按钮
+    .button-base(){
+        background-color: #91aed5;
+        border-color: #6982a4;
+        color: @base-color;
+        &:hover{
+            background-color: #6982a4;
+            border-color: #6982a4;
+            color: #ffffff;
+        }
+    }
+    .button-new(){
+        .button-base;
+        &:hover{
+            .icon_read{
+                background-position: -538px -89px;
+            }
+        }
+    }
+    .button-more(){
+        .button-base;
+        &:hover{
+            .icon{
+                background-position: -541px -218px;
+            }
+        }
+    }
+    .button-dropdown(){
+        .button-base;
+        &:hover{
+            .icon-arrow-down{
+                background-position: -475px -184px;
+            }
+        }
+    }
+    // 直播查看图标
+    .live-preview(){
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkYxNkNFRjZFNjNEMTFFODlFMDVGNzIwQzQzQTJCMzciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkYxNkNFRjdFNjNEMTFFODlFMDVGNzIwQzQzQTJCMzciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGRjE2Q0VGNEU2M0QxMUU4OUUwNUY3MjBDNDNBMkIzNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGRjE2Q0VGNUU2M0QxMUU4OUUwNUY3MjBDNDNBMkIzNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmzOAIsAAACrSURBVHjaYpy47qonAwPDXCCWZMAPngNxMhORihmgauYyEakYrokJTeAHEFcAsQQUV0DF4ABZwzcgdgXiS0B8HopBbDeoHIaGtLxArSNQP6VD8Vyg2GEoGwxYcLj1P5RmROMzMAKD9T+Sk9yBmA9qy1+QrUD8CYh3AjEXupNAAruBWBeI9YDYEMreDVOMzUkcQNwBxVgBEzQGiQUvQBpSQAwiFD8FJQ2AAAMA4j0m3dGrGFoAAAAASUVORK5CYII=");
+    }
+    // 排行序号
+    .rank-num(){
+        color: #ffffff;
+        background: #91aed5;
+    }
+    .rank-top-num(){
+        color: #ffffff;
+        background: #f5729d;
+    }
+    // 星期
+    .week-item(){
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+    .week-item-active(){
+        color: #91aed5;
+        border-color: #91aed5;
+    }
+
+
+
+    background-color: @base-color;
+
+    // 头部
+    .bili-header-m{
+        background-color: @base-color;
+    }
+    .bili-header-m .head-banner{
+        background-color: @base-color;
+    }
+
+    // 消息数量角标
+    .bili-header-m .nav-menu .nav-con .nav-item .t .num{
+        color: #ffffff;
+        background-color: #91aed5;
+    }
+    // 投稿按钮
+    .bili-header-m .nav-menu .up-load .u-link{
+        .upload-btn;
+    }
+    .bili-header-m .nav-menu .up-load:hover .u-link{
+        .upload-btn;
+    }
+    .bili-header-m .nav-menu .up-load .up-nav li a{
+        .upload-btn-a;
+    }
+    // 搜索排行榜
+    .bili-header-m .search .link-ranking span{
+        .upload-btn-a;
+    }
+
+    // 导航
+    .primary-menu{
+        border-color: @base-color;
+    }
+    .primary-menu .nav-menu li.home>a{
+        background-image: url("@{icons}");
+    }
+    // 导航文字
+    .primary-menu .nav-menu>li>a:not(.side-link) .nav-name{
+        color: #ffffff;
+    }
+    .primary-menu .nav-menu .side-nav .side-link span{
+        color: #ffffff;
+    }
+    .primary-menu .nav-menu .side-nav .side-link:hover span{
+        color: #ffffff;
+    }
+    // 导航角标
+    .primary-menu .nav-menu>li>a:not(.side-link) .num-wrap span{
+        background-color: #91aed5;
+        color: #ffffff;
+    }
+
+    // 推广版块标题
+    .popularize-module .headline .name{
+        color: #ffffff;
+    }
+    .popularize-module .headline .fire{
+        color: #91aed5;
+        &:hover{
+            color: #91aed5;
+        }
+        &:after{
+            border-color: #91aed5;
+        }
+    }
+    // 推广版块文字
+    .spread-module .t{
+        .module-text;
+    }
+    .spread-module a:hover .t{
+        .module-text;
+    }
+
+    // 在线人数
+    .popularize-module .online{
+        background: #3a495b;
+    }
+    .popularize-module .online a{
+        color: #91aed5;
+        &:hover{
+            color: #91aed5;
+        }
+    }
+    .popularize-module .online em{
+        border-color: #91aed5;
+    }
+
+    // 直播版块
+    .live-module .zone-title .headline .name{
+        .module-title;
+    }
+    // 直播人数
+    .live-module .zone-title .headline .online{
+        color: #91aed5;
+    }
+    .live-module .zone-title .headline .online span{
+        color: #feeb6b;
+    }
+    .live-module .zone-title .headline .fire{
+        color: #ff4e8e;
+        &:hover{
+            color: #ff4e8e;
+        }
+    }
+    // 新动态
+    .live-module .zone-title .headline .read-push{
+        .button-new;
+    }
+    // 更多
+    .live-module .zone-title .headline .link-more{
+        .button-more;
+    }
+    // 直播版块文字
+    .card-live-module:hover .t{
+        .module-text;
+    }
+    .card-live-module .t{
+        .module-text;
+    }
+    .card-live-module .num{
+        .module-sub-text;
+    }
+    // 直播排行文字
+    .live-module .tab-box .tab-con .tab-item .r-item .r-i-t .u-name{
+        .module-text;
+    }
+    .live-module .tab-box .tab-con .tab-item .r-item a:hover .u-name{
+        .module-text;
+    }
+    .live-module .tab-box .tab-con .tab-item .r-item .r-i-t .u-online{
+        .module-sub-text;
+    }
+    .live-module .tab-box .tab-con .tab-item .r-item .r-i-st{
+        .module-sub-text;
+    }
+    .live-module .tab-box .tab-con .tab-item .r-item .r-i-t .u-online i{
+        .live-preview;
+    }
+    // 直播排行序号
+    .live-module .tab-box .tab-con .tab-item .r-item:first-child .number, .live-module .tab-box .tab-con .tab-item .r-item:nth-child(2) .number, .live-module .tab-box .tab-con .tab-item .r-item:nth-child(3) .number{
+        .rank-top-num;
+    }
+    .live-module .tab-box .tab-con .tab-item .r-item .number{
+        .rank-num;
+    }
+
+    // 版块--标题
+    .new-comers-module .zone-title .headline .name{
+        .module-title;
+    }
+    // 版块--新动态
+    .new-comers-module .zone-title .headline .read-push{
+        .button-new;
+    }
+    // 版块--更多
+    .new-comers-module .zone-title .headline .link-more{
+        .button-more;
+    }
+
+
+    // 动画版块文字
+    .spread-module .t{
+        .module-text;
+    }
+    .spread-module .num{
+        .module-sub-text;
+    }
+    .spread-module a:hover .t{
+        .module-text;
+    }
+
+    // 番剧版块
+    .bangumi-timing-module .headline .name{
+        .module-title;
+    }
+    // 星期
+    .bangumi-timing-module .headline .bili-tab .bili-tab-item{
+        .week-item;
+    }
+    .bangumi-timing-module .headline .bili-tab .bili-tab-item.on{
+        .week-item-active;
+    }
+    // 新番时间表
+    .bangumi-timing-module .headline .c-clink{
+        color: #91aed5;
+        border-color: #91aed5;
+        background-color: @base-color;
+        &:hover{
+            color: #ffffff;
+            background-color: #91aed5;
+        }
+    }
+    // 番剧版块文字
+    .card-timing-module .r-text .t{
+        .module-text;
+    }
+    .card-timing-module .r-text .t:hover{
+        .module-text;
+    }
+    .card-timing-module .r-text .update{
+        color: #91aed5;
+    }
+    .card-timing-module .r-text .update a{
+        color: #ffffff;
+        background: #91aed5;
+    }
+    .card-timing-module .r-text .update.on a{
+        color: #ffffff;
+        background: #f5729d;
+    }
+    // 名称
+    .bangumi-rank-list .rank-item .ri-title{
+        .module-text;
+    }
+    .bangumi-rank-list .rank-item:hover .ri-title{
+        .module-text;
+    }
+    // 更新集数
+    .bangumi-rank-list .rank-item .ri-total{
+        .module-sub-text;
+    }
+
+
+    // 番剧动态版块
+    .new-comers-module .zone-title .headline .read-push{
+        .button-new;
+    }
+    .new-comers-module .zone-title .headline .link-more{
+        .button-more;
+    }
+    .bangumi-module .r-con header h3{
+        .rank-title;
+    }
+
+
+    // 国创版块
+    .sec-rank-gc .rank-head h3{
+        .rank-title;
+    }
+    .sec-rank-gc .more-link{
+        .button-more;
+    }
+
+
+    // 音频版块
+    .audio-comers-module .zone-title .headline .name{
+        .module-title;
+    }
+    .audio-comers-module .zone-title .headline .read-push{
+        .button-new;
+    }
+    .audio-comers-module .zone-title .headline .link-more{
+        .button-more;
+    }
+    // 音频版块文字
+    .audio-list .song-list .song-li .content .text{
+        background-color: @base-color;
+    }
+    .audio-list .song-list .song-li .content .text a{
+        .module-text;
+    }
+    .audio-list .song-list .song-li:hover .content .text a{
+        .module-text;
+    }
+    .audio-list .song-list .song-li .content .num{
+        .module-sub-text;
+    }
+    // 音频版块排行
+    .audio-sec-rank .rank-head h3{
+        .rank-title;
+    }
+    .audio-rank-list .rank-item .ri-detail .ri-title{
+        .module-text;
+    }
+    .audio-rank-list .rank-item .ri-detail .ri-point{
+        .module-sub-text;
+    }
+    .audio-rank-list .rank-item:hover .ri-title{
+        .module-text;
+    }
+    .audio-rank-list .rank-item.highlight .ri-num{
+        .rank-top-num;
+    }
+    .audio-rank-list .rank-item .ri-num{
+        .rank-num;
+    }
+    .audio-sec-rank .more-link{
+        .button-more;
+    }
+
+
+    // 特别推荐
+    .special-recommend-module .headline .name{
+        .module-title;
+    }
+    // 特别推荐文字
+    .special-module .user a{
+        color: #ffffff;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    .special-module .user .tag{
+        color: #91aed5;
+    }
+    .special-module .pic{
+        .module-text;
+    }
+    .special-module .pic:hover{
+        .module-text;
+    }
+
+
+    // 排行标题
+    .sec-rank .rank-head h3{
+        .rank-title;
+    }
+    .bili-dropdown{
+        .button-dropdown;
+    }
+    .bili-dropdown .dropdown-list{
+        .button-base;
+    }
+    .bili-dropdown .dropdown-list .dropdown-item:hover{
+        .button-base;
+    }
+    // 序号角标
+    .rank-list .rank-item .ri-num{
+        .rank-num;
+    }
+    // 序号角标--高亮
+    .rank-list .rank-item.highlight .ri-num{
+        .rank-top-num;
+    }
+    // 名称
+    .rank-list .rank-item .ri-detail .ri-title{
+        .module-text;
+    }
+    .rank-list .rank-item .ri-detail .ri-title:hover{
+        .module-text;
+    }
+    // 综合评分
+    .rank-list .rank-item .ri-detail .ri-point{
+        .module-sub-text;
+    }
+    // 查看更多
+    .sec-rank .more-link{
+        .button-more;
+    }
+
+    // tab
+    .bili-tab .bili-tab-item{
+        color: #ffffff;
+        &:hover{
+            color: #ffffff;
+        }
+        &:before{
+            border-bottom: 3px solid #91aed5;
+        }
+        &.on{
+            border-color: #91aed5;
+            color: #91aed5;
+        }
+    }
+
+    //侧边栏
+    .elevator-module .nav-list{
+        background-color: #91aed5;
+        border-color: #6982a4;
+    }
+    .elevator-module .nav-list .item{
+        color: @base-color;
+    }
+    .elevator-module .nav-list .item.on, .elevator-module .nav-list .item:hover{
+        background-color: #6982a4;
+        color: #ffffff;
+    }
+    .elevator-module .nav-list .customize{
+        border-color: #6982a4;
+    }
+    .elevator-module .s-line{
+        border-color: #6982a4;
+    }
+    .elevator-module .back-top{
+        .button-base;
+    }
+
+    // 滚动条
+    .custom-scrollbar::-webkit-scrollbar-track-piece{
+        background: @scrollbar-color;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb{
+        background: @scrollbar-thumb-color;
+        border: 1px solid @scrollbar-color;
+    }
+
+    // 图标
+    .bili-icon, .icon{
+        background-image: url("@{icons}");
+    }
+
+    // 底部
+    .bili-footer{
+        color: @footer-text-color;
+    }
+    .bili-footer .footer-wrp{
+        background-color: @footer-bg-color;
+    }
+    .bili-footer a{
+        color: @footer-text-color;
+    }
+    .bili-footer a:hover{
+        color: @footer-text-color;
+    }
+    .bili-footer .boston-postcards li{
+        border-color: @footer-text-color;
+    }
+    .bili-footer .partner .left a, .bili-footer .partner .right a{
+        color: @footer-text-color;
+    }
+    .bili-footer .partner .left a:hover, .bili-footer .partner .right a:hover{
+        color: @footer-text-color;
+    }
+
+}

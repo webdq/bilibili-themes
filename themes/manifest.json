@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "bilibili-themes",
+    "version": "1.0.0",
+    "description": "切换bilibili哔哩哔哩网站主题色",
+    "icons":
+    {
+        "16": "img/icon_16.png",
+        "48": "img/icon_48.png",
+        "128": "img/icon_128.png"
+    },
+    "author": "webdq",
+    "homepage_url": "https://github.com/webdq/bilibili-themes",
+    "background":
+    {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "browser_action":
+    {
+        "default_icon": "img/icon_16.png",
+        "default_title": "切换bilibili主题",
+        "default_popup": "popup.html"
+    },
+    "content_scripts":
+    [
+        {
+            "matches": ["*://*.bilibili.com/*"],
+            "js": ["js/main.js"],
+            "css": ["css/bili_theme_home.css","css/bili_theme_play.css"],
+            "run_at": "document_start"
+        }
+    ],
+    "permissions":
+    [
+        "tabs",
+        "storage"
+    ],
+    "web_accessible_resources": [
+        "css/bili_theme_home.css",
+        "css/bili_theme_play.css",
+        "img/icons-1.png",
+        "img/icons-2.png",
+        "img/icons-3.png",
+        "img/icons-4.png",
+        "img/icons-comment-1.png",
+        "img/icons-comment-2.png",
+        "img/icons-comment-3.png",
+        "img/icons-comment-4.png"
+    ]
+}
